@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import NavBar from "./components/navbar/NavBar";
-import Footer from "./components/footer/Footer";
-import SideBar from "./components/sidebar/SideBar";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Neosmart",
@@ -23,9 +21,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <ThemeProvider defaultTheme="system" attribute="class">
           <NavBar />
-          <SideBar />
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

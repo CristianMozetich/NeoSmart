@@ -1,16 +1,22 @@
 import MegafonoIcon from "../icons/Megafono";
+import CoheteIcon from "../icons/CoheteIcon";
+import PeopleIcon from "../icons/PeopleIcon";
+import LegalIcon from "../icons/LegalIcon";
 import { typeCategory } from "@/app/lib/fetch";
 
 export default function Cards({ category }: { category: typeCategory }) {
   const { category_id, name, cost, slug, image_path, subname } = category;
 
   return (
-    <div className="bg-tertiarySlate rounded-xl h-full">
+    <div className="bg-tertiarySlate rounded-xl">
       <img src={image_path} alt="neosmart card" width={250} height={200}></img>
       <div className="p-4">
         <div className="flex justify-between items-center m-2 mb-6">
-          <h1 className="text-subcategory">{name}</h1>
-          <MegafonoIcon />
+          <h1 className="text-subcategory font-bold">{name}</h1>
+          {category_id === 1 ? <MegafonoIcon /> : null}
+          {category_id === 2 ? <CoheteIcon /> : null}
+          {category_id === 3 ? <PeopleIcon /> : null}
+          {category_id === 4 ? <LegalIcon /> : null}
         </div>
         <div className="max-w-[200px]">
           <p className="text-subcategory border-b pb-1">{subname}</p>
