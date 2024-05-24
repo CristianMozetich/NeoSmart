@@ -19,8 +19,8 @@ export default function SideBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
   return (
-    <aside className="dark:bg-tertiarySlate bg-lightbg w-52  flex flex-col gap-16 p-6 justify-start mt-12">
-      <div className="dark:bg-secondarySlate rounded-md dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
+    <aside className="dark:bg-tertiarySlate bg-lightbg flex flex-col gap-16 p-6 justify-start mt-12">
+      <div className="dark:bg-secondarySlate p-2 rounded-md dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
         <div className="flex gap-1 text-sm items-center justify-between">
           <button
             className="flex items-center gap-3 p-1"
@@ -42,7 +42,7 @@ export default function SideBar() {
           </div>
         )}
       </div>
-      <div className="dark:bg-secondarySlate rounded-md dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
+      <div className="dark:bg-secondarySlate rounded-md p-2 dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
         <div className="flex gap-1 text-sm items-center justify-between">
           <button
             className="flex items-center gap-3 p-1"

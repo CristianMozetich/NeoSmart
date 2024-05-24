@@ -9,7 +9,7 @@ export default function Home() {
   const { user } = useFetchUser();
 
   return (
-    <div className="flex">
+    <div className="flex overflow-hidden">
       {/* Sidebar */}
       <SideBar />
 
@@ -24,7 +24,7 @@ export default function Home() {
               </p>
             ))}
           </h1>
-          <div className="flex gap-4 items-center flex-wrap">
+          <div className="flex gap-4 items-center justify-center flex-wrap">
             {categories.map((category: typeCategory) => (
               <Cards category={category} key={category.category_id} />
             ))}
