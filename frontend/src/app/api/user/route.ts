@@ -4,7 +4,7 @@ export async function GET() {
     return NextResponse.json([
         {
             id: 1,
-            name: "Francisca",
+            name: "Cristian",
         },
     ]);
 }

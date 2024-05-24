@@ -10,6 +10,7 @@ export type typeUser = {
 export interface typeCategory {
   category_id: number;
   name: string;
+  subname: string;
   cost: string;
   slug: string;
   image_path: string;
