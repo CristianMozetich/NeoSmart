@@ -1,37 +1,29 @@
+"use client";
+import { useFetchCategories } from "./lib/fetch";
+import { useFetchUser } from "./lib/fetch";
 import Cards from "./components/cards/Cards";
+import { typeUser } from "./lib/fetch";
+import { typeCategory } from "./lib/fetch";
 
-export interface typeCategory {
-  category_id: number;
-  name: string;
-  cost: string;
-  slug: string;
-  image_path: string;
-}
 
-export default async function Home() {
-  async function getData() {
-    try {
-      const response = await fetch("http://localhost:3000/api/categories", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error(error);
-    }
-  }
-  const categories = await getData();
+export default function Home() {
+  const { categories } = useFetchCategories();
+  const { user } = useFetchUser();
 
-  console.log(categories);
+  const userName =
+    user ? user : "...loading";
 
   return (
     <>
       <main className="bg-secondarySlate grid place-items-center min-h-dvh">
         <h1 className="m-2 p-2 text-3xl text-slate-100 text-center">
-          Hi, Peter
+          {
+            user.map((user: typeUser) => {
+              return (
+                <p key={user.id}>Hi, {user.name}</p>
+              )
+            })
+          }
         </h1>
         <div className="flex gap-4 items-center">
           {categories.map((category: typeCategory) => {
