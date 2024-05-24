@@ -3,6 +3,8 @@ import { useState } from "react";
 import SideBarIcon from "../icons/SideBarIcon";
 import SideBarClose from "../icons/SideBarClose";
 import SideBarOpen from "../icons/SideBarOpen";
+import AcademyIcon from "../icons/AcademyIcon";
+import FaqsIcon from "../icons/FaqsIcon";
 export default function SideBar() {
   const [isOpenPrompts, setIsOpenPrompts] = useState(false);
   const [isOpenProfile, setIsOpenProfile] = useState(false);
@@ -17,10 +19,13 @@ export default function SideBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
   return (
-    <aside className="bg-tertiarySlate w-52 z-10 h-full flex flex-col gap-8 fixed top-0 p-4 justify-center">
+    <aside className="bg-tertiarySlate w-52 z-10 h-full flex flex-col gap-16 fixed top-0 p-4 justify-center">
       <div className="bg-secondarySlate rounded-md text-white flex flex-col">
         <div className="flex gap-1 text-sm items-center justify-between">
-          <button className="flex items-center gap-3 p-1" onClick={handleTogglePrompts}>
+          <button
+            className="flex items-center gap-3 p-1"
+            onClick={handleTogglePrompts}
+          >
             <SideBarIcon />
             Prompts
           </button>
@@ -39,7 +44,10 @@ export default function SideBar() {
       </div>
       <div className="bg-secondarySlate rounded-md text-white flex flex-col">
         <div className="flex gap-1 text-sm items-center justify-between">
-          <button className="flex items-center gap-3 p-1" onClick={handleToggleProfile}>
+          <button
+            className="flex items-center gap-3 p-1"
+            onClick={handleToggleProfile}
+          >
             <SideBarIcon />
             My profile
           </button>
@@ -57,6 +65,12 @@ export default function SideBar() {
             </ul>
           </div>
         )}
+      </div>
+      <div>
+        <AcademyIcon />
+      </div>
+      <div>
+        <FaqsIcon />
       </div>
     </aside>
   );
