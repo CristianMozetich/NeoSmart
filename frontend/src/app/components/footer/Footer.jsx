@@ -48,30 +48,35 @@ export default function Footer() {
               <TwitterIcon />
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <h1>Enter your email to get update</h1>
-            <form className="flex flex-col gap-4">
-              <p>Email address</p>
+            <form className="flex flex-col">
+              <p className="text-sm">Email address</p>
               <input
                 type="text"
                 placeholder="Email"
-                className="w-72 h-8 rounded-md"
+                className="w-72 h-8 bg-white px-2 rounded-md"
               />
-              <div className="flex gap-2">
-                <input type="checkbox" />
-                <p>
-                  I have read and accept the Terms and Conditions and the
-                  Privacy Policy
-                </p>
-              </div>
-              <div className="flex gap-2">
-                <input type="checkbox" />
-                <p>
-                  I would like to receive commercial information from Neoprompts
-                </p>
-              </div>
-              <div className="flex justify-start">
-              <button className="bg-neoBrandTertiary rounded-sm text-white h-9 text-center  p-2">Register</button>
+              <div className="flex flex-col gap-4 mt-6">
+                <div className="flex gap-2">
+                  <input type="checkbox" />
+                  <p>
+                    I have read and accept the Terms and Conditions and the
+                    Privacy Policy
+                  </p>
+                </div>
+                <div className="flex gap-2">
+                  <input type="checkbox" />
+                  <p>
+                    I would like to receive commercial information from
+                    Neoprompts
+                  </p>
+                </div>
+                <div className="flex justify-start">
+                  <button className="bg-neoBrandTertiary flex items-center rounded-md text-white h-9 text-center px-4 py-4">
+                    REGISTER
+                  </button>
+                </div>
               </div>
             </form>
           </div>
@@ -79,7 +84,10 @@ export default function Footer() {
       </div>
       <div className="flex justify-center flex-col items-center gap-8 p-4">
         <p>support@neopropmts.ia</p>
-        <p className="ml-4">Neopromts is a product of <strong>Neosmart</strong>, all rights reserved.</p>
+        <p className="ml-4">
+          Neopromts is a product of <strong>Neosmart</strong>, all rights
+          reserved.
+        </p>
       </div>
     </footer>
   );

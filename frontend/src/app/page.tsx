@@ -1,7 +1,13 @@
 "use client";
 import SideBar from "./components/sidebar/SideBar";
 import Footer from "./components/footer/Footer";
-import { useFetchCategories, useFetchUser, typeUser, typeCategory } from "./lib/fetch";
+import NavBar from "./components/navbar/NavBar";
+import {
+  useFetchCategories,
+  useFetchUser,
+  typeUser,
+  typeCategory,
+} from "./lib/fetch";
 import Cards from "./components/cards/Cards";
 
 export default function Home() {
@@ -10,13 +16,15 @@ export default function Home() {
 
   return (
     <div className="flex overflow-hidden">
+      {/* Navbar */}
+      <NavBar />
       {/* Sidebar */}
       <SideBar />
 
       {/* Main  */}
-      <div className="flex flex-col items-center justify-between bg-lightbg dark:bg-secondarySlate">
+      <main className="flex flex-col bg-lightbg dark:bg-secondarySlate">
         {/* Main  */}
-        <div className="flex-grow h-dvh flex flex-col items-center justify-center">
+        <div className="flex-grow mt-12 flex flex-col">
           <h1 className="m-2 p-2 text-3xl text-slate-100 text-center">
             {user.map((user: typeUser) => (
               <p className="font-bold" key={user.id}>
@@ -24,7 +32,7 @@ export default function Home() {
               </p>
             ))}
           </h1>
-          <div className="flex gap-4 items-center justify-center flex-wrap">
+          <div className="flex gap-4 m-4 p-4 items-center justify-center flex-wrap">
             {categories.map((category: typeCategory) => (
               <Cards category={category} key={category.category_id} />
             ))}
@@ -33,8 +41,7 @@ export default function Home() {
 
         {/* Footer */}
         <Footer />
-      </div>
+      </main>
     </div>
   );
 }
-

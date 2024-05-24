@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import NavBar from "./components/navbar/NavBar";
+
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
@@ -20,7 +20,6 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider defaultTheme="system" attribute="class">
-          <NavBar />
           {children}
         </ThemeProvider>
       </body>
