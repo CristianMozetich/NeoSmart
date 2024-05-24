@@ -4,7 +4,7 @@ import IgIcon from "../icons/Instagram";
 import TwitterIcon from "../icons/Twitter";
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-tertiarySlate to-secondarySlate ml-40 p-6 text-white">
+    <footer className="bg-gradient-to-r from-tertiarySlate to-secondarySlate ml-48 p-6 text-white">
       <div>
         <div className="flex items-center gap-2">
           <LogoIcon />
