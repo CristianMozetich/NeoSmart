@@ -19,8 +19,8 @@ export default function SideBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
   return (
-    <aside className="dark:bg-tertiarySlate bg-lightbg flex flex-col gap-16 p-6 justify-start mt-12">
-      <div className="dark:bg-secondarySlate p-2 rounded-md dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
+    <aside className="dark:bg-tertiarySlate w-96 bg-lightbg flex flex-col gap-16 p-6 justify-start mt-12">
+      <div className="dark:bg-secondarySlate p-2 rounded-md text-fillicon dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
         <div className="flex gap-1 text-sm items-center justify-between">
           <button
             className="flex items-center gap-3 p-1"
@@ -42,7 +42,7 @@ export default function SideBar() {
           </div>
         )}
       </div>
-      <div className="dark:bg-secondarySlate rounded-md p-2 dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
+      <div className="dark:bg-secondarySlate rounded-md p-2 text-fillicon dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
         <div className="flex gap-1 text-sm items-center justify-between">
           <button
             className="flex items-center gap-3 p-1"
@@ -68,11 +68,11 @@ export default function SideBar() {
       </div>
       <div className="flex cursor-pointer gap-2 items-center">
         <AcademyIcon />
-        <p>Academy</p>
+        <p className="dark:text-white text-fillicon">Academy</p>
       </div>
       <div className="flex cursor-pointer gap-2 items-center">
         <FaqsIcon />
-        <p>FAQs</p>
+        <p className="dark:text-white text-fillicon">FAQs</p>
       </div>
     </aside>
   );

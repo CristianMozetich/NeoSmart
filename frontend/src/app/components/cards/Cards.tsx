@@ -9,7 +9,7 @@ export default function Cards({ category }: { category: typeCategory }) {
 
   return (
     <div className="bg-tertiarySlate rounded-xl">
-      <img src={image_path} alt="neosmart card" width={250} height={200}></img>
+      <img src={image_path} alt="neosmart card" className="max-w-[250px]"></img>
       <div className="p-4">
         <div className="flex justify-between items-center m-2 mb-6">
           <h1 className="text-subcategory font-bold">{name}</h1>

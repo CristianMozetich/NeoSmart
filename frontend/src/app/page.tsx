@@ -24,15 +24,15 @@ export default function Home() {
       {/* Main  */}
       <main className="flex flex-col bg-lightbg dark:bg-secondarySlate">
         {/* Main  */}
-        <div className="flex-grow mt-12 flex flex-col">
-          <h1 className="m-2 p-2 text-3xl text-slate-100 text-center">
+        <div className="flex-grow mt-12 md:h-screen flex flex-col">
+          <h1 className="m-4 p-2 text-3xl text-slate-100 text-center">
             {user.map((user: typeUser) => (
-              <p className="font-bold" key={user.id}>
+              <p className="font-bold dark:text-white text-fillicon" key={user.id}>
                 Hi, {user.name}
               </p>
             ))}
           </h1>
-          <div className="flex gap-4 m-4 p-4 items-center justify-center flex-wrap">
+          <div className="flex gap-6 m-4 p-4 items-center justify-center flex-wrap">
             {categories.map((category: typeCategory) => (
               <Cards category={category} key={category.category_id} />
             ))}
