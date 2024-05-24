@@ -27,7 +27,7 @@ export default function Home() {
         <div className="flex-grow mt-12 md:h-screen flex flex-col">
           <h1 className="m-4 p-2 text-3xl text-slate-100 text-center">
             {user.map((user: typeUser) => (
-              <p className="font-bold dark:text-white text-fillicon" key={user.id}>
+              <p className="font-bold dark:text-white text-fillicon animate-fade-left" key={user.id}>
                 Hi, {user.name}
               </p>
             ))}

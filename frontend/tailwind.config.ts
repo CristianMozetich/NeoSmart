@@ -21,6 +21,7 @@ const config: Config = {
         lightbg: "#F7F9FD",
         lighticon: "#353E58",
         fillicon: "#2C3445",
+        cardwhite: "#0B0F18"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -29,6 +30,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };
 export default config;
