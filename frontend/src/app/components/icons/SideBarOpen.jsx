@@ -9,7 +9,7 @@ export default function SideBarOpen() {
     >
       <path
         d="M16 19.5556L10 13.5556L11.5556 12L16 16.4444L20.4444 12L22 13.5556L16 19.5556Z"
-        fill="white"
+        className="dark:fill-white fill-lighticon"
       />
     </svg>
   );

@@ -9,7 +9,7 @@ export default function SideBarIcon() {
     >
       <path
         d="M16 12.0001L22 18.0001L20.4444 19.5557L16 15.1112L11.5556 19.5557L10 18.0001L16 12.0001Z"
-        fill="white"
+        className="dark:fill-white fill-lighticon"
       />
     </svg>
   );

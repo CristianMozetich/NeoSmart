@@ -19,7 +19,7 @@ export default function SideBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
   return (
-    <aside className="dark:bg-tertiarySlate w-96 bg-lightbg flex flex-col gap-16 p-6 justify-start mt-12">
+    <aside className="dark:bg-tertiarySlate w-96 bg-slate-100 flex flex-col gap-16 p-6 justify-start mt-12">
       <div className="dark:bg-secondarySlate p-2 rounded-md text-fillicon dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
         <div className="flex gap-1 text-sm items-center justify-between">
           <button
