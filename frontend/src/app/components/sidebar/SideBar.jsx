@@ -19,7 +19,7 @@ export default function SideBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
   return (
-    <aside className="bg-tertiarySlate w-52 z-10 h-full flex flex-col gap-16 fixed top-0 p-4 justify-center">
+    <aside className="dark:bg-tertiarySlate bg-lightbg w-52 fixed h-dvh flex flex-col gap-16 top-0 p-6 justify-center">
       <div className="bg-secondarySlate rounded-md text-white flex flex-col">
         <div className="flex gap-1 text-sm items-center justify-between">
           <button
@@ -34,10 +34,10 @@ export default function SideBar() {
         {isOpenPrompts && (
           <div className="flex flex-col items-center">
             <ul className="flex flex-col text-sm p-2 gap-2">
-              <li>Legal</li>
-              <li>People</li>
-              <li>Marketing</li>
-              <li>Finance</li>
+              <li className="cursor-pointer">Legal</li>
+              <li className="cursor-pointer">People</li>
+              <li className="cursor-pointer">Marketing</li>
+              <li className="cursor-pointer">Finance</li>
             </ul>
           </div>
         )}
@@ -57,11 +57,11 @@ export default function SideBar() {
         {isOpenProfile && (
           <div className="flex flex-col items-center">
             <ul className="flex flex-col gap-2 text-sm p-2">
-              <li>My prompts</li>
-              <li>Saved</li>
-              <li>Settings</li>
-              <li>Shared Whit</li>
-              <li>Friends</li>
+              <li className="cursor-pointer">My prompts</li>
+              <li className="cursor-pointer">Saved</li>
+              <li className="cursor-pointer">Settings</li>
+              <li className="cursor-pointer">Shared Whit</li>
+              <li className="cursor-pointer">Friends</li>
             </ul>
           </div>
         )}

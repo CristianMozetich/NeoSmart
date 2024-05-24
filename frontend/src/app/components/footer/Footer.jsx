@@ -4,11 +4,11 @@ import IgIcon from "../icons/Instagram";
 import TwitterIcon from "../icons/Twitter";
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-tertiarySlate to-secondarySlate ml-48 p-6 text-white">
+    <footer className="bg-gradient-to-r ml-48 from-tertiarySlate to-secondarySlate p-6 text-white">
       <div>
         <div className="flex items-center gap-2">
           <LogoIcon />
-          <h1 className="text-white">NeopPrompts</h1>
+          <h1 className="text-white">NeoPrompts</h1>
         </div>
         <div className="grid grid-cols-4 items-center m-6">
           <div className="flex flex-col gap-4">
