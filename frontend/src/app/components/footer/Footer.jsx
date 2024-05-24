@@ -8,7 +8,7 @@ export default function Footer() {
       <div>
         <div className="flex items-center gap-2">
           <LogoIcon />
-          <h1 className="dark:text-white text-fillicon"><strong>neo</strong>prompts</h1>
+          <h1 className="dark:text-white text-fillicon text-3xl"><strong>neo</strong>prompts</h1>
         </div>
         <div className="grid md:grid-cols-4 grid-cols-1 items-center m-6">
           <div className="flex flex-col p-4 gap-4">
