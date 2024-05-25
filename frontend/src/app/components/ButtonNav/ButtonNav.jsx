@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function ButtonNav() {
   const [userOn, setUserOn] = useState(false);
 
+  //Login del usuario en la barra de navegación
   const handleUser = () => {
     setUserOn(!userOn);
   };

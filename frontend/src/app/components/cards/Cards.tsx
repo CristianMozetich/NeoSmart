@@ -5,6 +5,7 @@ import LegalIcon from "../icons/LegalIcon";
 import { typeCategory } from "@/app/lib/fetch";
 import Image from "next/image";
 
+//Card con las categorías de la API 
 export default function Cards({ category }: { category: typeCategory }) {
   const { category_id, name, cost, slug, image_path, subname } = category;
 

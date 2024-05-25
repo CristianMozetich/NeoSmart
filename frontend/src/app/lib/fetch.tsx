@@ -16,6 +16,7 @@ export interface typeCategory {
   image_path: string;
 }
 
+// FETCHING DE CATEGORÍAS
 export const useFetchCategories = () => {
   const [categories, setCategories] = useState([]);
 
@@ -41,6 +42,7 @@ export const useFetchCategories = () => {
   return { categories };
 };
 
+// FETCHING DE USUARIOS
 export const useFetchUser = () => {
   const [user, setUser] = useState([]);
 
