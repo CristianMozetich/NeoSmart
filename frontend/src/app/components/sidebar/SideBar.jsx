@@ -5,6 +5,7 @@ import SideBarLink from "../sideBarLink/SideBarLink";
 import AcademyIcon from "../icons/AcademyIcon";
 import FaqsIcon from "../icons/FaqsIcon";
 
+//Barra de navegación lateral
 export default function SideBar({ asideResponsive }) {
   const promptsItems = ["Legal", "People", "Marketing", "Finance"];
   const profileItems = ["My prompts", "Saved", "Settings", "Shared With", "Friends"];

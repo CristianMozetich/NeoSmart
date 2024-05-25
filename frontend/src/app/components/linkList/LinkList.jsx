@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Links del footer
 const LinkListComponent = ({ links }) => (
   <ul className="flex flex-col items-center md:items-start">
     {links.map((link, index) => (

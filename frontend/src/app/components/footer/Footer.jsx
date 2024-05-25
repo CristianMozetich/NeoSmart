@@ -8,6 +8,7 @@ import AddressComponent from "../addressComponent/AddressComponent";
 import LinkListComponent from "../linkList/LinkList";
 import SubscriptionForm from "../subscripcion/Subscripcion";
 
+//Footer
 const Footer = () => {
   const europeAddress = [
     "Vía de las dos castillas, 33",

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+//API DE CATEGORÍAS
 export async function GET() {
     return NextResponse.json([
         {

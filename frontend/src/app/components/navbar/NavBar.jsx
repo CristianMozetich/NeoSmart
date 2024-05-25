@@ -5,6 +5,7 @@ import ThemeToggleButton from "../modeToggleButton/ModeToggleButton";
 import NavIcons from "../navIcons/NavIcons";
 import ButtonNav from "../ButtonNav/ButtonNav";
 
+//Barra de navegación
 export default function NavBar({ handleAsideResponsive, asideResponsive }) {
   return (
     <header className="dark:bg-tertiarySlate bg-lightbg h-12 top-0 w-screen shadow-md fixed flex justify-between z-10 items-center gap-4">

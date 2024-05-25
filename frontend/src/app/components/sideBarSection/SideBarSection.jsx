@@ -3,6 +3,7 @@ import SideBarIcon from "../icons/SideBarIcon";
 import SideBarClose from "../icons/SideBarClose";
 import SideBarOpen from "../icons/SideBarOpen";
 
+//Secciónes de la barra de navegación lateral
 const SideBarSection = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => setIsOpen(!isOpen);

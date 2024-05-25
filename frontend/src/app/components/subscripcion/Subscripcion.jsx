@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Formulario de subscripción del footer
 const SubscriptionForm = () => (
   <div className="flex flex-col gap-6 m-2">
     <h1 className="font-bold">Enter your email to get updates</h1>

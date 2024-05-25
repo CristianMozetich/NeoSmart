@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Address Component
 const AddressComponent = ({ title, addressLines }) => (
   <div className="flex flex-col md:items-start items-center m-2">
     <h1 className="font-bold">{title}</h1>
