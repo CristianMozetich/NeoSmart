@@ -9,17 +9,23 @@ import {
   typeCategory,
 } from "./lib/fetch";
 import Cards from "./components/cards/Cards";
+import { useState } from "react";
 
 export default function Home() {
   const { categories } = useFetchCategories();
   const { user } = useFetchUser();
+  const [asideResponsive, setAsideResponsive] = useState(false);
+
+  const handleAsideResponsive = () => {
+    setAsideResponsive(!asideResponsive);
+  };
 
   return (
     <div className="flex overflow-hidden">
       {/* Navbar */}
-      <NavBar />
+      <NavBar handleAsideResponsive={handleAsideResponsive} asideResponsive={asideResponsive} />
       {/* Sidebar */}
-      <SideBar />
+      <SideBar asideResponsive={asideResponsive} />
 
       {/* Main  */}
       <main className="flex flex-col bg-lightbg dark:bg-secondarySlate">
@@ -27,7 +33,10 @@ export default function Home() {
         <div className="flex-grow mt-12 md:h-screen flex flex-col">
           <h1 className="m-4 p-2 text-3xl text-slate-100 text-center">
             {user.map((user: typeUser) => (
-              <p className="font-bold dark:text-white text-fillicon animate-fade-left" key={user.id}>
+              <p
+                className="font-bold dark:text-white text-fillicon animate-fade-left"
+                key={user.id}
+              >
                 Hi, {user.name}
               </p>
             ))}

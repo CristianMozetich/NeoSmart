@@ -5,7 +5,8 @@ import SideBarClose from "../icons/SideBarClose";
 import SideBarOpen from "../icons/SideBarOpen";
 import AcademyIcon from "../icons/AcademyIcon";
 import FaqsIcon from "../icons/FaqsIcon";
-export default function SideBar() {
+
+export default function SideBar({ asideResponsive }) {
   const [isOpenPrompts, setIsOpenPrompts] = useState(false);
   const [isOpenProfile, setIsOpenProfile] = useState(false);
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -14,12 +15,18 @@ export default function SideBar() {
     setIsOpenProfile(!isOpenProfile);
     setIsSideBarOpen(!isSideBarOpen);
   };
+
   const handleTogglePrompts = () => {
     setIsOpenPrompts(!isOpenPrompts);
     setIsSideBarOpen(!isSideBarOpen);
   };
+
   return (
-    <aside className="dark:bg-tertiarySlate max-w-72 bg-slate-100 p-6 justify-start mt-12 md:block hidden">
+    <aside
+      className={`dark:bg-tertiarySlate max-w-72 bg-slate-100 p-6 justify-start mt-12 ${
+        asideResponsive ? "block fixed h-screen z-10" : "hidden md:block"
+      }`}
+    >
       <div className="flex flex-col gap-8">
         <div className="dark:bg-secondarySlate p-2 rounded-md text-fillicon dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
           <div className="flex gap-4 text-sm items-center justify-between">
@@ -54,7 +61,6 @@ export default function SideBar() {
             </button>
             {isSideBarOpen ? <SideBarClose /> : <SideBarOpen />}
           </div>
-
           {isOpenProfile && (
             <div className="flex flex-col items-center">
               <ul className="flex flex-col gap-2 text-sm p-2">
@@ -79,3 +85,4 @@ export default function SideBar() {
     </aside>
   );
 }
+
