@@ -9,7 +9,7 @@ export default function Cards({ category }: { category: typeCategory }) {
   const { category_id, name, cost, slug, image_path, subname } = category;
 
   return (
-    <div className="dark:bg-tertiarySlate bg-cardwhite rounded-xl animate-fade-up">
+    <div className="dark:bg-tertiarySlate bg-cardwhite rounded-2xl animate-fade-up">
       <Image src={image_path} width={250} height={250} alt="neosmart card"></Image>
       <div className="p-4">
         <div className="flex justify-between items-center m-2 mb-6">

@@ -1,5 +1,4 @@
 "use client";
-import { button } from "@nextui-org/react";
 import UserIcon from "../icons/UserIcon";
 import { useState } from "react";
 export default function ButtonNav() {
