@@ -3,13 +3,14 @@ import CoheteIcon from "../icons/CoheteIcon";
 import PeopleIcon from "../icons/PeopleIcon";
 import LegalIcon from "../icons/LegalIcon";
 import { typeCategory } from "@/app/lib/fetch";
+import Image from "next/image";
 
 export default function Cards({ category }: { category: typeCategory }) {
   const { category_id, name, cost, slug, image_path, subname } = category;
 
   return (
     <div className="dark:bg-tertiarySlate bg-cardwhite rounded-xl animate-fade-up">
-      <img src={image_path} alt="neosmart card" className="max-w-[250px]"></img>
+      <Image src={image_path} width={250} height={250} alt="neosmart card"></Image>
       <div className="p-4">
         <div className="flex justify-between items-center m-2 mb-6">
           <h1 className="dark:text-subcategory text-neoBrandTertiary font-semibold">
