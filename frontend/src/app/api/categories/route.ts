@@ -17,7 +17,7 @@ export async function GET() {
             subname: "Recruiting",
             cost: "$2.00",
             slug: "Startup",
-            image_path: "http://localhost:3000/img/card1.png",
+            image_path: "http://localhost:3000/img/people.png",
         },
         {
             category_id: 3,
@@ -25,7 +25,7 @@ export async function GET() {
             subname: "Content Marketing",
             cost: "$3.00",
             slug: "Marketing",
-            image_path: "http://localhost:3000/img/card1.png",
+            image_path: "http://localhost:3000/img/marketing.png",
         },
         {
             category_id: 4,
@@ -33,7 +33,7 @@ export async function GET() {
             subname: "Idea Generation",
             cost: "$4.00",
             slug: "People",
-            image_path: "http://localhost:3000/img/card1.png",
+            image_path: "http://localhost:3000/img/startups.png",
         },
     ]);
 }

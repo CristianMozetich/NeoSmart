@@ -10,8 +10,8 @@ export default function SearchNavIcon() {
     >
       <rect width="32" height="32" rx="16" className="dark:fill-fillicon" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M8 15C8 18.86 11.14 22 15 22C18.86 22 22 18.86 22 15C22 11.14 18.86 8 15 8C11.14 8 8 11.14 8 15ZM10 15C10 12.243 12.243 10 15 10C17.757 10 20 12.243 20 15C20 17.757 17.757 20 15 20C12.243 20 10 17.757 10 15Z"
         className="dark:fill-white fill-lighticon"
       />

@@ -17,8 +17,8 @@ const SideBarSection = ({ title, items }) => {
         >
           <SideBarIcon />
           {title}
+          {isOpen ? <SideBarClose /> : <SideBarOpen />}
         </button>
-        {isOpen ? <SideBarClose /> : <SideBarOpen />}
       </div>
       {isOpen && (
         <div className="flex flex-col items-center">
