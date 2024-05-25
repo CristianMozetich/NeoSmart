@@ -12,7 +12,9 @@ export default function Cards({ category }: { category: typeCategory }) {
       <img src={image_path} alt="neosmart card" className="max-w-[250px]"></img>
       <div className="p-4">
         <div className="flex justify-between items-center m-2 mb-6">
-          <h1 className="dark:text-subcategory text-neoBrandTertiary font-bold">{name}</h1>
+          <h1 className="dark:text-subcategory text-neoBrandTertiary font-semibold">
+            {name}
+          </h1>
           {category_id === 1 ? <MegafonoIcon /> : null}
           {category_id === 2 ? <CoheteIcon /> : null}
           {category_id === 3 ? <PeopleIcon /> : null}
@@ -25,7 +27,7 @@ export default function Cards({ category }: { category: typeCategory }) {
         </div>
       </div>
       <div className="flex justify-center p-2 m-2">
-        <button className="bg-neoBrandTertiary rounded-sm text-white m-2 px-2">
+        <button className="bg-neoBrandTertiary rounded-sm text-white m-2 px-2 hover:translate-y-[-0.2rem] transition-all">
           SEE MORE CATEGORIES
         </button>
       </div>

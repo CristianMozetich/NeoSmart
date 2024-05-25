@@ -23,7 +23,10 @@ export default function Home() {
   return (
     <div className="flex overflow-hidden">
       {/* Navbar */}
-      <NavBar handleAsideResponsive={handleAsideResponsive} asideResponsive={asideResponsive} />
+      <NavBar
+        handleAsideResponsive={handleAsideResponsive}
+        asideResponsive={asideResponsive}
+      />
       {/* Sidebar */}
       <SideBar asideResponsive={asideResponsive} />
 
@@ -34,7 +37,7 @@ export default function Home() {
           <h1 className="m-4 p-2 text-3xl text-slate-100 text-center">
             {user.map((user: typeUser) => (
               <p
-                className="font-bold dark:text-white text-fillicon animate-fade-left"
+                className="font-semibold dark:text-white text-fillicon animate-fade-left"
                 key={user.id}
               >
                 Hi, {user.name}

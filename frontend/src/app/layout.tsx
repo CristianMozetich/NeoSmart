@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
-
+import { Open_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const inter = DM_Sans({ subsets: ["latin"] });
+const inter = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Neosmart",

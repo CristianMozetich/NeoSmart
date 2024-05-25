@@ -2,13 +2,14 @@ import LogoIcon from "../icons/LogoIcon";
 import LinkedinIcon from "../icons/LinkedIn";
 import IgIcon from "../icons/Instagram";
 import TwitterIcon from "../icons/Twitter";
+import LogoFooter from "../icons/LogoFooter";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r dark:from-tertiarySlate dark:to-secondarySlate text-fillicon p-6 dark:text-white bg-slate-100">
       <div>
         <div className="flex items-center gap-2">
           <LogoIcon />
-          <h1 className="dark:text-white text-fillicon text-3xl"><strong>neo</strong>prompts</h1>
+          <LogoFooter/>
         </div>
         <div className="grid md:grid-cols-4 grid-cols-1 items-center m-6">
           <div className="flex flex-col p-4 gap-4">
@@ -26,22 +27,22 @@ export default function Footer() {
               <p>United States</p>
             </div>
           </div>
-          <div className="flex flex-col items-center m-2">
-            <ul>
-              <li>Neoprompts</li>
-              <li>Neoprompts Blog</li>
-              <li>Neoprompts Academy</li>
-              <li>Neoprompts Resources</li>
-              <li>FAQs</li>
+          <div className="m-2">
+            <ul className="flex flex-col items-center md:items-start">
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">Neoprompts</li>
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">Neoprompts Blog</li>
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">Neoprompts Academy</li>
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">Neoprompts Resources</li>
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">FAQs</li>
             </ul>
           </div>
-          <div className="flex flex-col items-center gap-4 m-2">
-            <ul>
-              <li>Legal Policy</li>
-              <li>Privacy Policy</li>
-              <li>Terms of service</li>
+          <div className="gap-4 m-2">
+            <ul className="flex flex-col items-center md:items-start">
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">Legal Policy</li>
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">Privacy Policy</li>
+              <li className="hover:text-neoBrandTertiary cursor-pointer transition-all">Terms of service</li>
             </ul>
-            <div className="flex gap-4 items-center">
+            <div className="flex gap-4 items-center mt-5">
               <LinkedinIcon />
               <IgIcon />
               <TwitterIcon />
@@ -54,7 +55,7 @@ export default function Footer() {
               <input
                 type="text"
                 placeholder="Email"
-                className="max-w-72 h-8 bg-white px-2 rounded-md"
+                className="max-w-72 h-8 bg-transparent px-2 rounded-md dark:bg-white border-black border text-secondarySlate dark:border-none"
               />
               <div className="flex flex-col gap-4 mt-6">
                 <div className="flex gap-2">
