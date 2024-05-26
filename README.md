@@ -21,7 +21,7 @@ https://github.com/CristianMozetich/NeoSmart.git
 ### 2 - Grid/List of Categories
 #### This component displays categories fetched from the API in a grid or list format, allowing the user to explore them interactively.
 ### Additional Features
-#### Interactive Animations: Smooth animations have been added to enhance the user experience when interacting with the components.
+#### Interactive Animations: Smooth animations have been added to enhance the user experience when interacting with the components. Additionally, the components support both light and dark modes, providing users with flexibility and customization options to adapt the interface to their preferences.
 
 ## Technologies 
 [![next.js](https://img.shields.io/badge/next.js-000?style=for-the-badge&logo=next.js&logoColor)](https://nextui.org/)
