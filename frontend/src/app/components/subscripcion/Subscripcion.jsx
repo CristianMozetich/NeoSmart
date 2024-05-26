@@ -7,19 +7,22 @@ const SubscriptionForm = () => (
     <form className="flex flex-col">
       <p className="text-sm">Email address</p>
       <input
+        id='email'
+        name="email"
         type="text"
         placeholder="Email"
+        autoComplete="email"
         className="max-w-72 h-8 bg-transparent px-2 rounded-md dark:bg-white border-black border text-secondarySlate dark:border-none"
       />
       <div className="flex flex-col gap-4 mt-6">
         <div className="flex gap-2">
-          <input type="checkbox" />
+          <input type="checkbox" id='terms' />
           <p>
             I have read and accept the Terms and Conditions and the Privacy Policy
           </p>
         </div>
         <div className="flex gap-2">
-          <input type="checkbox" />
+          <input type="checkbox" id='comercial' />
           <p>
             I would like to receive commercial information from Neoprompts
           </p>
