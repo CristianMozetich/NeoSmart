@@ -21,7 +21,7 @@ const SideBarSection = ({ title, items }) => {
         </button>
       </div>
       {isOpen && (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center dark:bg-transparent bg-slate-200 rounded-md">
           <ul className="flex flex-col ml-3 text-sm p-2 gap-2">
             {items.map((item, index) => (
               <li key={index} className="cursor-pointer hover:text-neoBrandTertiary transition-all">

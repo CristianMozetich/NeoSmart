@@ -29,7 +29,7 @@ export default function Cards({ category }: { category: typeCategory }) {
         </div>
       </div>
       <div className="flex justify-center p-2 m-2">
-        <button className="bg-neoBrandTertiary rounded-sm text-white m-2 px-2 hover:translate-y-[-0.2rem] transition-all">
+        <button className="bg-neoBrandTertiary hover:text-fillicon rounded-sm text-white m-2 px-2 hover:translate-y-[-0.2rem] transition-all">
           SEE MORE CATEGORIES
         </button>
       </div>

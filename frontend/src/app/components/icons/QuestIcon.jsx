@@ -5,10 +5,10 @@ export default function QuestIcon() {
       height="32"
       viewBox="0 0 32 32"
       fill="none"
-      className="hover:cursor-pointer"
+      className="hover:cursor-pointer hover:fill-neoBrandTertiary transition-all"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="32" height="32" rx="16" className="dark:fill-fillicon" />
+      <rect width="32" height="32" rx="16" className="dark:fill-fillicon dark:hover:fill-neoBrandTertiary transition-all" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"

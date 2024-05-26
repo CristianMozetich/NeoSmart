@@ -6,8 +6,9 @@ export default function ModeIcon() {
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="hover:fill-neoBrandTertiary transition-all"
     >
-      <rect width="32" height="32" rx="16" className="dark:fill-fillicon" />
+      <rect width="32" height="32" rx="16" className="dark:fill-fillicon dark:hover:fill-neoBrandTertiary transition-all" />
       <rect x="15" y="8" width="2" height="2" className="dark:fill-white fill-lighticon" />
       <rect
         x="20.8802"
