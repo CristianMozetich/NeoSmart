@@ -10,9 +10,9 @@ const SideBarSection = ({ title, items }) => {
 
   return (
     <div className="dark:bg-secondarySlate p-2 rounded-md text-fillicon dark:text-white flex flex-col dark:border-0 border border-solid border-sidebarPink">
-      <div className="flex gap-4 text-sm items-center justify-between">
+      <div className="flex gap-4 text-sm items-center">
         <button
-          className="flex items-center gap-3 p-1 hover:text-neoBrandTertiary cursor-pointer transition-all"
+          className="flex items-center justify-between gap-3 w-44 p-1 hover:text-neoBrandTertiary cursor-pointer transition-all"
           onClick={handleToggle}
         >
           <SideBarIcon />
@@ -22,7 +22,7 @@ const SideBarSection = ({ title, items }) => {
       </div>
       {isOpen && (
         <div className="flex flex-col items-center">
-          <ul className="flex flex-col text-sm p-2 gap-2">
+          <ul className="flex flex-col ml-3 text-sm p-2 gap-2">
             {items.map((item, index) => (
               <li key={index} className="cursor-pointer hover:text-neoBrandTertiary transition-all">
                 {item}
