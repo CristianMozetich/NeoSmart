@@ -31,7 +31,7 @@ export default function Home() {
       <SideBar asideResponsive={asideResponsive} />
 
       {/* Main  */}
-      <main className="flex flex-col bg-lightbg dark:bg-secondarySlate">
+      <main className="flex flex-col h-dvh md:h-full bg-lightbg dark:bg-secondarySlate">
         {/* Main  */}
         <div className="flex-grow mt-12 md:h-screen flex flex-col">
           <h1 className="m-4 p-2 text-3xl text-slate-100 text-center">
